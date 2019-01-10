@@ -19,7 +19,7 @@ function deepestChild() {
   var grandNode = document.querySelector('#grand-node')
   var queue = grandNode.children
   while (queue.length > 0) {
-    var deepestNode = queue.shift()
+    var deepestNode = queue.shift
     for (let i = 0; i < deepestNode.length; i++) {
       queue.push(deepestNode[i]);
     }
