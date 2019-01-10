@@ -21,10 +21,10 @@ function deepestChild() {
   while (queue.length > 0) {
     var deepestNode = queue.shift()
     for (let i = 0; i < deepestNode.length; i++) {
-      queue.push(deepestNode[i]);
       if (queue.length === 0) {
-        return deepestNode
+        return deepestNode;
       }
+      queue.push(deepestNode[i]);
     }
   }
 }
