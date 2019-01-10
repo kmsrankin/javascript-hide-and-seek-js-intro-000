@@ -21,7 +21,7 @@ function deepestChild() {
   while (queue.length > 0) {
     var deepestNode = queue.shift()
     for (let i = 0; i < deepestNode.length; i++) {
-      if (typeof deepestNode[i] === 'string') {
+      if (typeof deepestNode[i] === "string") {
         return deepestNode
       }
       queue.push(deepestNode[i]);
